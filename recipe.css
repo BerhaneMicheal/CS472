@@ -1,0 +1,15 @@
+h1 {
+    color: rgb(181, 181, 65);
+    text-align: center;
+}
+h2,h3,h4,h5 {
+    color:rgb(181, 181, 65) ;
+    text-decoration: underline;
+    font-size: larger;
+}
+blockquote {
+background-color: rgb(219, 219, 52);
+}
+h4,h5 {
+    background-color: rgb(209, 204, 204);
+}
