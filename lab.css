@@ -21,6 +21,8 @@ legend{
     background-color:antiquewhite;
     padding: 1px;
     box-shadow: 2px 2px;
+    border: 1px;
+    border-style: soli;
 }
 
 .left{
