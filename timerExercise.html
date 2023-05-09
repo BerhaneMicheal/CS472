@@ -14,7 +14,7 @@
     <ol>
         <li><dt>What is the differencebetween the following 2 statements?</dt>
             <ul><li>SetTimeout(booyah, 2000);</li><span> //The first code calls the funcDon `booyah` aFer 2 seconds, which is done by func%on reference as there is no parenthesis.</span>
-                <li>SetTimeout(booyah(), 2000);</li><span> //The second code fails with a callback error because the we are trying to execute the funcDon immediately, by adding the parenthesis, this becomes func%on evalua%on/execuDon, which results in a call back error.</span>
+                <li>SetTimeout(booyah(), 2000);</li><span> //calles the function booyah immediately rather than waiting for 2 seconds.</span>
             </ul>
         </li>
 
