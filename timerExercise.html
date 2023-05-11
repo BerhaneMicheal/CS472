@@ -7,18 +7,28 @@
     <link href="decorate.css" type="text/css" rel="stylesheet" />
     
 
-    <title>Javascript Exercises</title>
+    <title>JQUERY QUIZE ||</title>
 </head>
 <body>
-    <h1>Javascript Exercises</h1>
+    <h1>JQUERY QUIZE ||</h1>
     <ol>
-        <li><dt>What is the differencebetween the following 2 statements?</dt>
-            <ul><li>SetTimeout(booyah, 2000);</li><span> //The first code calls the funcDon `booyah` aFer 2 seconds, which is done by func%on reference as there is no parenthesis.</span>
-                <li>SetTimeout(booyah(), 2000);</li><span> //calles the function booyah immediately rather than waiting for 2 seconds.</span>
+        <li><dt>Which, if any, of the following 3 code fragments are equivalent? Explain why they are different, if
+            they are. Explain why they can have different parameters and be equivalent, if they are equivalent. </dt>
+            <ul><li>//code fragment 1
+                $("li").each(function(idx, e) {<br>
+                 $(e).css(“color”, “yellow”); });<br>
+                //code fragment 2<br>
+                $("li").each(function() {<br>
+                 $(this).css(“color”, “yellow”); });<br>
+                //code fragment 3<br>
+                $("li").each(function(idx) {<br>
+                 $(this).css(“color”, “yellow”); });</li><span> //ANSWER=><br>
+                    All three of them are equivalent, because all of them tells that the css operation is applied for every element of the list.</span>
+                
             </ul>
         </li>
 
-        <li><dt>What do the following 2 alerts display (answer without running the code)?</dt>
+        <li><dt>Write a jQuery expression to find all divs on a page that include an unordered list in them, and make their text color be blue.</dt>
             <pre>
             var myfunc = function(a, x) {
                 return a * x;
