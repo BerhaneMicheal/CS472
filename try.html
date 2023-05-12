@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+$(document).ready(function(){
+$('span').parents('li, ul').css('color', 'green');
+});
+</script>
+</head>
+<body>
+<div class="ancestors">
+<div> (great-grandparent)
+<ul> (grandparent)
+<li> (direct parent)
+<span>some text</span>
+</li>
+</ul>
+</div>
+</div>
+</body>
+</html>
