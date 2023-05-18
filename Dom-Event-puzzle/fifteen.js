@@ -16,6 +16,7 @@ $(document).ready(function () {
 //function for setting the position and css for the filled squares
     $('#puzzlearea div').each(function ()
     {
+        
         var filledSquares = {};
         var x = ((count % 4) * 100);
         var y = (Math.floor(count / 4) * 100);
@@ -25,9 +26,17 @@ $(document).ready(function () {
         filledSquares.leftpx = leftpx;
         filledSquares.toppx = toppx;
         arr.push(filledSquares);
-        $(this).css({"left": leftpx, "top": toppx, "backgroundImage": 'url("backgroundfifteen.jpg")', "backgroundPosition": -x + 'px ' + (-y) + 'px'});
+      
+        $(this).css({"left": leftpx, "top": toppx, "backgroundImage": "url('images/background.jpg')", "backgroundPosition": -x + 'px ' + (-y) + 'px'});
         count++;
     });
+
+    var images= ["url('images/background.jpg')", "url('images/background2.jpeg')"];
+    var index=0;
+    $("#changeImage").click(function(){
+      if(index>2){index=0;};
+      $(".puzzlepiece").css({"background-image":images[index++]})
+    })
 
 //this function checks if the square can be moved, and swaps the value for emptysquare
     $('.puzzlepiece').click(function ()
