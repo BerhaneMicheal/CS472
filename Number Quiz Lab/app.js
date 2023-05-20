@@ -31,7 +31,7 @@ app.get('/', (req, res) => {
     if (req.session.quizIndex >= sequences.length) {
         res.render('end', { score: req.session.score, total: sequences.length });
     } else {
-        res.render('quiz', { sequence: sequences[req.session.quizIndex].seq, score: req.session.score });
+        res.render('quiz', { sequence:  sequences[req.session.quizIndex].seq, score: req.session.score });
     }
 });
 
