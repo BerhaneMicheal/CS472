@@ -2,13 +2,17 @@ var mysql = require("mysql");
 
 // configration file
 var connection = mysql.createConnection({
+  host: "localhost",
   user: "Dainom",
   password: "Kidanemhret21",
-  server: "localhost",
-  database: "entries"
+  database: "entries",
+  socketPath: "/tmp/mysql.sock"
 });
 
-connection.connect();
+connection.connect(err => {
+  if (err) throw err;
+  console.log("Database Connected!");
+});
 
 exports.wordMeaning = function (res, searchterm) {
   connection.query(
